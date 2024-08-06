@@ -1,0 +1,27 @@
+name = "placement-website-backend"
+compatibility_date = "2024-04-01"
+
+# Store your secrets in .dev.vars for local development
+[vars]
+MY_VAR = "my-variable"
+
+# [[kv_namespaces]]
+# binding = "MY_KV_NAMESPACE"
+# id = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+
+# [[r2_buckets]]
+# binding = "MY_BUCKET"
+# bucket_name = "my-bucket"
+
+# [[d1_databases]]
+# binding = "DB"
+# database_name = "my-database"
+# database_id = ""
+
+# [ai]
+# binding = "AI"
+
+[[d1_databases]]
+binding = "DB"                                       # i.e. available in your Worker on env.DB
+database_name = "placement-website-d1"
+database_id = "f5c4054e-315d-4f81-a2fa-db01a501cab9"
